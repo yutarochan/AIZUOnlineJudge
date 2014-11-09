@@ -1,0 +1,25 @@
+import java.io.*;
+import java.util.*;
+
+public class Main {
+
+	public static void main(String[] args) throws Exception {
+		Scanner sc = new Scanner(System.in);
+
+		ArrayList<String> nums = new ArrayList<String>();		
+		while (sc.hasNext()) {
+			String s = sc.nextLine();
+			if (s.equals("0")) break;
+			nums.add(s);		
+		}
+
+		for (String s : nums)
+	}
+
+	public static int getSum(String n) {
+		int sum = 0;
+		for (int i = 0; i < n.length(); i++)
+			sum += Integer.parseInt(n.charAt(i)+"");
+		return sum;
+	}
+}
